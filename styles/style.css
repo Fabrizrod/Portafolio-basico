@@ -136,13 +136,12 @@ body {
 .presentacion-imagenes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 10rem; 
+    align-items: center; 
     width: 43%;
 }
 
 .presentacion-imagenes img {
-    width: 90%;
+    width: 100%;
 }
 
 
@@ -167,6 +166,26 @@ body {
 
     .header-menu{
         justify-content: center;
+    }
+
+    .presentacion {
+    flex-direction: column-reverse;
+    padding: 5%;
+    }
+    
+    .presentacion-contenido{
+        width: auto;
+    }
+}
+
+@media(max-width: 390px){
+    .header{
+        padding: 5%;
+    }
+
+    .header-menu{
+        justify-content: center;
+        gap: 2.1875rem;
     }
 
     .presentacion {
