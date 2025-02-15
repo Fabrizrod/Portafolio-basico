@@ -38,6 +38,14 @@ body {
     text-decoration: none;
 }
 
+.header-menu-link.activo {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: var(--color-terciario);
+}
+
+
+
 /* Contenedor principal */
 .presentacion {
     padding: 5% 15%;
@@ -178,14 +186,14 @@ body {
     }
 }
 
-@media(max-width: 390px){
+@media(max-width: 340px){
     .header{
-        padding: 6%;
+        padding: 5%;
     }
 
     .header-menu{
-        justify-content: center;
-        gap: 2.1875rem;
+        flex-direction: column;
+        gap: 2rem;
     }
 
     .presentacion {
@@ -195,5 +203,17 @@ body {
     
     .presentacion-contenido{
         width: auto;
+    }
+
+    .presentacion-imagen{
+        width: 100%;
+        padding-top: 2rem;
+    }
+    
+    .presentacion-imagenes {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
     }
 }
