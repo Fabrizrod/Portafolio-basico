@@ -175,6 +175,14 @@ body {
     .header-menu{
         justify-content: center;
     }
+    
+    .header-menu-link{
+        font-family: var(--fuente-montserrat);
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--color-terciario);
+        text-decoration: none;
+    }
 
     .presentacion {
     flex-direction: column-reverse;
@@ -186,14 +194,23 @@ body {
     }
 }
 
-@media(max-width: 340px){
+@media(max-width: 478px){
     .header{
         padding: 5%;
+        font-size: 30px;
     }
 
     .header-menu{
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .header-menu-link{
+        font-family: var(--fuente-montserrat);
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: var(--color-terciario);
+        text-decoration: none;
     }
 
     .presentacion {
